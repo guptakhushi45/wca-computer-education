@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCA Computer Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            display: inline-block;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section h2 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                float: none;
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>WCA Computer Education</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#why">Why WCA?</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to WCA Computer Education</h2>
+            <p>Government Certified Institute for Job-Oriented Computer Training. Located in Bhitargaon above Bank of Baroda.</p>
+            <p>Contact: 8127667369 | 8299157717</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p><strong>Centre Director:</strong> Tanweer Sir</p>
+            <p><strong>Centre Co-ordinator:</strong> Kaushlendra Rajput</p>
+            <p>We are a Government Certified institute offering Online Exams & Certificates, Projector-Based Smart Classes, and courses for all Government Jobs.</p>
+        </div>
+    </section>
+
+    <section id="courses" class="section">
+        <div class="container">
+            <h2>Courses Offered</h2>
+            <ul>
+                <li>O'Level</li>
+                <li>CCC</li>
+                <li>ADCA</li>
+                <li>MDCA</li>
+                <li>TALLY PRIME</li>
+                <li>TYPING</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="why" class="section">
+        <div class="container">
+            <h2>Why Choose WCA?</h2>
+            <p>Listed below our awesome services and offers!</p>
+            <ul>
+                <li>Pioneer in the field of Job Oriented Data Feeding, Computer Accounts & Taxation, Programming, Designing Training.</li>
+                <li>10000+ satisfied students.</li>
+                <li>Believable Institute.</li>
+                <li>3+ centres.</li>
+                <li>Time to time updated course material.</li>
+                <li>Industry relevant syllabus.</li>
+                <li>Value added training with practical approach.</li>
+                <li>Speed Test, Online Exam Practice, Home Practice Assignments.</li>
+                <li>1:1 Computer facility.</li>
+                <li>Project based teaching & Sunday Special Classes.</li>
+                <li>Motivational Classes by Audio and Video facility.</li>
+                <li>Workshops and seminars at regular intervals.</li>
+                <li>Grooming sessions conducted by eminent professionals.</li>
+                <li>Own Research & Development team to get you updated and industry relevant syllabus.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Location: Bhitargaon, above Bank of Baroda</p>
+            <p>Phone: 8127667369 | 8299157717</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 WCA Computer Education. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            // In a real setup, add code to send the form data to a server.
+        });
+    </script>
+</body>
+</html>
